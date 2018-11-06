@@ -1,0 +1,55 @@
+// main: ../main.scss
+
+body[data-lightboxstate=expanded] .pagecontent{
+  overflow-y: hidden !important;
+}
+.main-segment {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  @include l {
+    width: 1290px;
+    height: 700px;
+    margin-bottom: 400px;
+  }
+  @include m {
+    width: 98vw;
+    height: auto;
+    margin-bottom: 50vw;
+  }
+  @include s {
+    width: 95vw;
+  }
+
+    .ms-hr {
+      z-index: 1;
+      @include l {
+        transition: width 1s, opacity 1s;
+        height: .2em;
+        width: 120%;
+        background-color: $color-grey;
+        margin-left: -100px;
+        margin-top: 300px;
+        position: absolute;
+      }
+      @include m {
+        display: none;
+      }
+    }
+    .ms-hr::before {
+      @include l {
+        content: '';
+        display: block;
+        position: absolute;
+        margin-top: -.6em;
+        margin-left: -6em;
+        height: 1em;
+        width: 1em;
+        border: .2em solid $color-grey;
+        border-radius: 3em;
+      }
+      @include m {
+        display: none;
+      }
+    }
+}

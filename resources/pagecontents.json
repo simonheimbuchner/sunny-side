@@ -1,0 +1,65 @@
+{
+      "defaults": {
+            "defaultImgPath": "resources/img"
+      },
+      "navigation" : [
+        {"navPoint": "musik", "linksToOnPage": "#nav-musik", "linksToHTML": ""},
+        {"navPoint": "band", "linksToOnPage": "#nav-band", "linksToHTML": ""},
+        {"navPoint": "kontakt", "linksToOnPage": "#nav-kontakt", "linksToHTML": ""},
+        {"navPoint": "impressum", "linksToOnPage": "", "linksToHTML": "impressum.html"},
+      ],
+      "pageContents": [
+          {
+                "navPoint": "header",
+                "backgroundImage": "bg-header.jpg",
+                "contentType": "none",
+                "contents": false
+          },
+          {
+                "navPoint": "musik",
+                "backgroundImage": "bg-musik.jpg",
+                "contentType": "musicEmbeds",
+                "contents": [
+                      {
+                        "headline": "auf Spotify",
+                        "content": "spotify-embed"
+                      },
+                      {
+                        "headline": "auf Soundcloud",
+                        "content": "soundcloud-embed"
+                      }
+                ]
+          },
+          {
+                "navPoint": "band",
+                "backgroundImage": "bg-band.jpg",
+                "contentType": "text",
+                "contents": [
+                      {
+                        "runningText": "Sunspiration ist ein Band-Trio aus München. Von Schultagen an befreundet, machen wir seit einigen Jahren zusammen Musik. Mittlerweile haben wir schon viele Konzerte, Radioauftritte und zwei Alben im Gepäck dabei. Unser Markenzeichen ist zweistimmiger Gesang, der die Kurven unserer Songs steuert. Dazu gesellen sich Gitarrensoli, elektronische Klänge auf den Tasten und eingängige Beats am Schlagzeug. Hör einfach mal rein, lass dich mitnehmen und wenn dir gefällt, was du fühlst, komm zu unseren Konzerten oder hol dir unsere CD, indem du uns über <a href='#nav-kontakt'>kontakt</a> schreibst."
+                      }
+                ]
+          },
+          {
+                "navPoint": "kontakt",
+                "backgroundImage": "bg-kontakt.jpg",
+                "contentType": "form",
+                "contents": [
+                      {"type": "text", "name": "name", "placeholder": "Name", "required": "true"},
+                      {"type": "text", "name": "email", "placeholder": "E-Mail", "required": "true"},
+                      {"type": "text", "name": "subject", "placeholder": "Betreff", "required": "true"},
+                      {"type": "textarea", "name": "contents", "placeholder": "Nachricht", "required": "true"}
+                ]
+          },
+          {
+                "navPoint": "kontakt",
+                "backgroundImage": "bg-kontakt.jpg",
+                "contentType": "text",
+                "contents": [
+                      {
+                        "runningText": "impressumtext"
+                      }
+                ]
+          }
+      ]
+}
